@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.app{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #1F1E1E;
+}
+.chess_bigdiv{
+  display: grid;
+  grid-template-columns: repeat(8,100px);
+  grid-template-rows: repeat(8,100px);
+  width: 800px;
+  height: 800px;
+  background-color: #779556;
+}
+.chess_bigdiv .tile{
+  width: 100px;
+  height: 100px;
+}
+.chess_bigdiv .black-tile{
+  background-color: #779556;
+}
+.chess_bigdiv .white-tile{
+  background-color: #ebecd0;
+}
