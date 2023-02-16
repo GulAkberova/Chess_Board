@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 const vertical = ["1", "2", "3", "4", "5", "6", "7", "8"];
-const horizantal =  ["1", "2", "3", "4", "5", "6", "7", "8"];
+const horizantal = ["1", "2", "3", "4", "5", "6", "7", "8"];
 function ChessBoard() {
+  // const[color,setColor]=useState('')
   const handleadd = (e) => {
-    console.log(e.target.innerText);
+    console.log(e.target);
+    e.target.classList.add('white-tile')
+
+
   };
   let board = [];
   for (let j = vertical.length - 1; j >= 0; j--) {
@@ -13,7 +17,7 @@ function ChessBoard() {
 
       if (number % 2 === 0) {
         board.push(
-          <div onClick={(e) => handleadd(e)} className="tile white-tile">
+          <div onClick={(e) => handleadd(e)} className="tile">
             {horizantal[i]}
             {vertical[j]}
           </div>

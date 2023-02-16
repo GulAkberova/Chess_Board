@@ -22,10 +22,13 @@
 .chess_bigdiv .tile{
   width: 100px;
   height: 100px;
+  background-color: #ebecd0;
+
+
 }
 .chess_bigdiv .black-tile{
   background-color: #779556;
 }
 .chess_bigdiv .white-tile{
-  background-color: #ebecd0;
+  background-color: red;
 }
